@@ -7,9 +7,9 @@ function [xTreino, xTeste, dTreino, dTeste] = amostraRand(x, d)
     x = x(o,:); %atribui os valores  com ordem diferente a variaveis iniciais
     d = d(o,:);
     xTreino = x(1:qtA,:);
-    xTeste = x(qtA+1:qtT+qtA,:);
+    xTeste = x(s-qtT:end,:);
     
     dTreino = d(1:qtA,:);
-    dTeste = d(qtA+1:qtT+qtA,:);
+    dTeste = d(s-qtT:end,:);
     
 end

@@ -1,7 +1,7 @@
 function [RBFelm] = Camada2(x, d, qNeuro, p, epocaMax, testeMax) %construtor, e inicializador 
      
      for k=1:testeMax
-      clc;
+      clc
       qNeuro
       k
      [w1, var] = Camada1(x, d, qNeuro);
